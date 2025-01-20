@@ -1,0 +1,37 @@
+.settings-pane {
+    -fx-background-color: #1E1F22;  /* Dark background for the settings pane */
+}
+
+.settings-nav-button {
+    -fx-background-color: #0077CC;
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+}
+
+.settings-nav-button:hover {
+    -fx-background-color: #005fa3;
+    -fx-cursor: hand;
+}
+
+.save-button {
+    -fx-background-color: #28a745;  /* Green for a 'save' button */
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+}
+
+.save-button:hover {
+    -fx-background-color: #218838;
+    -fx-cursor: hand;
+}
+
+.input-field, .password-field {
+    -fx-pref-width: 200px;
+    -fx-pref-height: 30px;
+    -fx-background-color: #333;  /* Dark background for input fields */
+    -fx-border-color: #555;  /* Subtle contrast for the border */
+    -fx-text-fill: white;  /* White text for visibility */
+    -fx-padding: 8px;  /* Padding for better text alignment */
+    -fx-border-radius: 5px;  /* Rounded corners for aesthetics */
+}

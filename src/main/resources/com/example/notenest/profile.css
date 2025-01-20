@@ -1,0 +1,40 @@
+.profile-pane {
+    background-color: #1E1F22;  /* Consistent dark background */
+    font-family: 'Segoe UI', sans-serif;  /* Uniform font across the application */
+}
+
+.profile-label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;  /* White text for contrast */
+}
+
+.profile-info {
+    -fx-font-size: 14px;
+    -fx-text-fill: white;  /* Changed from #666 to white for better visibility */
+    -fx-padding: 5px;
+}
+
+.profile-bio {
+    -fx-background-color: #1E1F22;  /* Darker background color for the bio field */
+    -fx-border-color: #555;  /* Gray border to maintain some contrast */
+    -fx-border-radius: 5px;
+    -fx-pref-height: 100px;
+    -fx-text-fill: white;  /* White text for high contrast and readability */
+    -fx-padding: 8px;  /* Padding for text inside the bio field */
+}
+
+
+.home-button {
+    -fx-background-color: #0077CC;  /* Consistent blue color for buttons */
+    -fx-text-fill: white;
+    -fx-padding: 10px;
+    -fx-font-size: 14px;
+    -fx-border-radius: 5px;
+    -fx-border: none;  /* Ensure no border for a clean look */
+}
+
+.home-button:hover {
+    -fx-background-color: #005fa3;  /* Darker shade on hover */
+    -fx-cursor: hand;  /* Hand cursor on hover */
+}

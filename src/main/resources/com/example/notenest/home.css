@@ -1,0 +1,34 @@
+.text-link {
+    -fx-background-color: transparent;
+    -fx-border: none;
+    -fx-text-fill: white;
+    -fx-underline: false;  // Removes the underline from the text
+-fx-padding: 5px;
+    -fx-cursor: hand;
+}
+
+.text-link:hover {
+    -fx-text-fill: #005fa3;
+}
+
+.option-button {
+    -fx-background-color: #0077CC;
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-font-size: 14px;
+}
+
+.option-button:hover {
+    -fx-background-color: #005fa3;
+    -fx-cursor: hand;
+}
+
+.search-field {
+    -fx-pref-width: 200px;
+    -fx-pref-height: 30px;
+    -fx-background-color:  #1E1F22;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5px;
+    -fx-text-fill: white;
+}

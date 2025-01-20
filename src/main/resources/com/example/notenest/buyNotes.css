@@ -1,0 +1,33 @@
+/* Additional styling for ScrollPane */
+.scroll-pane {
+    -fx-background: #1E1F22;
+    -fx-border-color: transparent;
+}
+
+/* Styling for notes and spacing */
+.vbox {
+    -fx-spacing: 10px;
+    -fx-alignment: top-center;
+    -fx-padding: 20;
+}
+
+/* Home button specific style */
+.home-button {
+    -fx-background-color: #0077CC; /* Blue background */
+    -fx-text-fill: white;
+    -fx-padding: 10px;
+    -fx-font-size: 14px;
+    -fx-border-radius: 5px;
+}
+
+.home-button:hover {
+    -fx-background-color: #005fa3;
+    -fx-cursor: hand;
+}
+
+/* Welcome text (used for the 'Buy Notes' title) */
+.welcome-text {
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}

@@ -1,0 +1,50 @@
+/* Input field styling for text areas and text fields */
+.input-field {
+    -fx-background-color: #333;  /* Dark background for input fields */
+    -fx-border-color: #555;  /* Grey border for subtle contrast */
+    -fx-border-radius: 5px;
+    -fx-padding: 8px;
+    -fx-text-fill: white;  /* Light grey text color for readability */
+}
+
+/* Styling for the VBox layout */
+.vbox {
+    -fx-spacing: 20px;
+    -fx-alignment: top-center;
+    -fx-padding: 40;
+}
+
+/* Save button specific style, also suitable for 'Submit Note' button */
+.save-button {
+    -fx-background-color: #28a745; /* Green background */
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    -fx-font-size: 14px;
+    -fx-border-radius: 5px;
+}
+
+.save-button:hover {
+    -fx-background-color: #218838;
+    -fx-cursor: hand;
+}
+
+/* Home button styling */
+.home-button {
+    -fx-background-color: #0077CC; /* Blue background */
+    -fx-text-fill: white;
+    -fx-padding: 10px;
+    -fx-font-size: 14px;
+    -fx-border-radius: 5px;
+}
+
+.home-button:hover {
+    -fx-background-color: #005fa3;
+    -fx-cursor: hand;
+}
+
+/* Welcome text styling for the page title */
+.welcome-text {
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}

@@ -1,0 +1,29 @@
+.save-button, .home-button {
+    -fx-background-color: #4CAF50; /* Example green color for Save Changes button */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+}
+
+.home-button {
+    -fx-background-color: #0077CC; /* Blue color for Home button */
+}
+
+.save-button:hover, .home-button:hover {
+    -fx-opacity: 0.8;
+    -fx-cursor: hand;
+}
+
+.input-field {
+    -fx-pref-width: 300px; /* Consistent width for input fields */
+    -fx-pref-height: 30px;
+    -fx-background-color: #1E1F22;
+    -fx-border-color: white;
+    -fx-border-radius: 5px;
+}
+
+.form-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+}

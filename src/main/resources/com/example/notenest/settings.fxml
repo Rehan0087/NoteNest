@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #1E1F22" styleClass="settings-pane" stylesheets="@settings.css" vgap="12" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.notenest.MainController">
+    <padding>
+        <Insets bottom="40" left="40" right="40" top="40" />
+    </padding>
+
+    <!-- Column Constraints for better alignment -->
+    <columnConstraints>
+        <ColumnConstraints hgrow="NEVER" minWidth="150" prefWidth="150" /> <!-- Column for Labels -->
+        <ColumnConstraints hgrow="ALWAYS" minWidth="200" prefWidth="200" /> <!-- Column for Input Fields -->
+    </columnConstraints>
+
+    <!-- Row Constraints for even spacing -->
+    <rowConstraints>
+        <RowConstraints vgrow="NEVER" /> <!-- Username row -->
+        <RowConstraints vgrow="NEVER" /> <!-- New password row -->
+        <RowConstraints vgrow="NEVER" /> <!-- Confirm new password row -->
+        <RowConstraints vgrow="NEVER" /> <!-- Button row -->
+    </rowConstraints>
+
+    <!-- Labels and Input Fields -->
+    <Label styleClass="input-label" text="Username:" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <TextField fx:id="usernameField" promptText="Enter username" styleClass="input-field" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+    <Label styleClass="input-label" text="New Password:" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <PasswordField fx:id="newPasswordField" promptText="Enter new password" styleClass="input-field" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+    <Label styleClass="input-label" text="Confirm New Password:" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <PasswordField fx:id="confirmPasswordField" promptText="Confirm new password" styleClass="input-field" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+    <!-- Buttons aligned in a single HBox -->
+    <HBox spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <Button styleClass="save-button" text="Save Changes" />
+        <Button fx:id="editProfileButton" onAction="#switchToEditProfile" styleClass="settings-nav-button" text="Edit Profile" />
+        <Button fx:id="otherSettingsButton" styleClass="settings-nav-button" text="Other Settings" />
+        <Button fx:id="homeButton" onAction="#switchToHomePage" styleClass="settings-nav-button" text="Home" />
+    </HBox>
+</GridPane>

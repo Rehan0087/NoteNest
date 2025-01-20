@@ -1,0 +1,46 @@
+.create-account-pane, .login-pane {
+    background-color: #1E1F22; /* Dark background for dark mode */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.input-label {
+    font-size: 14px;
+    color: white; /* Ensuring high visibility on dark background */
+}
+
+.input-field {
+    -fx-background-color: #1E1F22; /* Matching the dark mode theme */
+    -fx-border-color: white;
+    -fx-border-radius: 5px;
+    -fx-padding: 8px;
+    -fx-pref-width: 200px;
+    -fx-text-fill: white; /* White text for input fields */
+}
+
+.create-account-button, .login-button {
+    -fx-background-color: #0077CC; /* Standard blue for buttons */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px 20px;
+    -fx-font-size: 14px;
+    -fx-border: none;
+}
+
+.create-account-button:hover, .login-button:hover {
+    -fx-background-color: #005fa3; /* Darker blue on hover */
+    -fx-cursor: hand;
+}
+
+.welcome-text {
+    -fx-font-size: 20px;
+    -fx-text-fill: white; /* White for high contrast */
+    -fx-font-weight: bold;
+}
+
+.vbox {
+    -fx-spacing: 10px;
+    -fx-alignment: center;
+}

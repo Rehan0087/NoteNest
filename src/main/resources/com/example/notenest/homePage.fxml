@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #1E1F22;" styleClass="home-pane" stylesheets="@home.css" vgap="12" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.notenest.MainController">
+   <padding>
+      <Insets bottom="40" left="40" right="40" top="40" />
+   </padding>
+
+   <!-- Left Column for Navigation Links -->
+   <VBox fx:id="navigationButtons" spacing="10" GridPane.rowIndex="3">
+      <Button fx:id="profileButton" onAction="#switchToProfile" prefHeight="31.0" prefWidth="54.0" styleClass="text-link" text="Profile" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="settingsButton" onAction="#switchToSettings" styleClass="text-link" text="Settings">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="chatButton" onAction="#switchToChat" styleClass="text-link" text="Chat">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="logoutButton" onAction="#switchToLoginPage" styleClass="text-link" text="Logout">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+   </VBox>
+
+   <!-- Middle Column for Search Notes Field -->
+   <VBox fx:id="notesOptions" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="3">
+      <HBox spacing="10">
+         <Button fx:id="buyNotesButton" onAction="#switchToBuyNotes" styleClass="option-button" text="Buy Notes" />
+         <Button fx:id="sellNotesButton" onAction="#switchToSellNotes" styleClass="option-button" text="Sell Notes" />
+      </HBox>
+   </VBox>
+
+   <!-- Right Column for Search Users Field -->
+   <TextField fx:id="searchUserField" promptText="Search Users" styleClass="search-field" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+   <TextField fx:id="searchNotesField" prefWidth="192.0" promptText="Search Notes" styleClass="search-field" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+   <columnConstraints>
+      <ColumnConstraints minWidth="150" prefWidth="150" /> <!-- Left column for buttons -->
+      <ColumnConstraints hgrow="ALWAYS" /> <!-- Middle column for search notes field and Buy/Sell options -->
+      <ColumnConstraints minWidth="200" prefWidth="200" /> <!-- Right column for search user field -->
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints vgrow="ALWAYS" /> <!-- Allows vertical growth if needed -->
+   </rowConstraints>
+</GridPane>

@@ -1,0 +1,59 @@
+/* General Styling for Dark Mode */
+.login-pane, .create-account-pane {
+    background-color:#1E1F22;  /* Dark background for the panes */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);  /* Slightly darker shadow for depth */
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Input Labels */
+.input-label {
+    font-size: 14px;
+    color: #CCC;  /* Light grey for text for better readability in dark mode */
+}
+
+/* Input Fields */
+.input-field {
+    -fx-background-color: #333;  /* Darker background for input fields */
+    -fx-border-color: #555;  /* Grey border for subtle contrast */
+    -fx-border-radius: 5px;
+    -fx-padding: 8px;
+    -fx-pref-width: 200px;
+    -fx-text-fill: white;  /* Light grey text color */
+}
+
+/* Buttons */
+.login-button, .create-account-button {
+    -fx-background-color: #0077CC;  /* Deeper blue maintains visibility in dark mode */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px 20px;
+    -fx-font-size: 14px;
+    -fx-border: none;
+}
+
+.login-button:hover, .create-account-button:hover {
+    -fx-background-color: #005fa3;  /* Darker blue on hover */
+    -fx-cursor: hand;
+}
+
+/* Welcome Text */
+.welcome-text {
+    -fx-font-size: 20px;
+    -fx-text-fill: #FFF;  /* White text for high contrast */
+    -fx-font-weight: bold;
+    -fx-underline: false;
+}
+
+/* VBox and HBox Layouts */
+.vbox, .hbox {
+    -fx-spacing: 10px;
+    -fx-alignment: center;
+}
+
+/* Ensuring overall visibility and aesthetics */
+* {
+    -fx-base: #282828;  /* Base color for all controls */
+    -fx-control-inner-background: #1E1F22;  /* Dark inner background for controls */
+}
